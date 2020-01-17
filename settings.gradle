@@ -1,2 +1,2 @@
-include ':app', ':buildsrc', ':buildSrc'
+include ':app', ':buildsrc', ':buildSrc', ':commonui'
 rootProject.name='Skeleton'
