@@ -145,7 +145,14 @@ fun Project.baseAndroidDependencies() {
             "implementation"(Libs.Core.recyclerView)
             "implementation"(Libs.Core.fragment)
 
-            "testImplementation"(Libs.UnitTestLib.robolectric)
+            "implementation"(Libs.Network.retrofit)
+            "implementation"(Libs.Network.okhttpInterceptor)
+            "implementation"(Libs.Network.okhttpMockWebServer)
+            "implementation"(Libs.Network.retrofitGson)
+            "implementation"(Libs.Network.retrofitCoroutineAdapter)
+
+
+        "testImplementation"(Libs.UnitTestLib.robolectric)
             "testImplementation"(Libs.SharedTestLibs.espresso)
 
             "debugImplementation"(Libs.Misc.leakCanary)
