@@ -137,6 +137,8 @@ fun Project.baseAndroidDependencies() {
             "implementation"(Libs.Navigation.fragment)
             "implementation"(Libs.Navigation.navigationUI)
 
+            "implementation"(Libs.Misc.preferences)
+
             "implementation"(Libs.Core.appCompat)
             "implementation"(Libs.Core.constraintLayout)
             "implementation"(Libs.Core.annotation)
