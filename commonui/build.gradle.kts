@@ -3,7 +3,7 @@ import com.jdmack.skeleton.baseAndroidDependencies
 import com.jdmack.skeleton.baseDependencies
 
 plugins {
-    id("com.android.application")
+    id("com.android.library")
     id("kotlin-android")
     id("kotlin-kapt")
     id("kotlin-android-extensions")
@@ -15,7 +15,6 @@ android {
     defaultConfig {
         minSdkVersion(Libs.SharedConfig.minSDK)
         targetSdkVersion(Libs.SharedConfig.targetSDK)
-        applicationId = "com.jdmccormack.skeleton"
         versionCode = 1
         versionName = "1.0"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"

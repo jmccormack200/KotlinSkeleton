@@ -31,5 +31,7 @@ android {
 
 baseDependencies()
 baseAndroidDependencies()
+
 dependencies {
+    implementation(project(":commonui"))
 }
