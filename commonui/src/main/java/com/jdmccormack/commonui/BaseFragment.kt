@@ -7,7 +7,6 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import androidx.lifecycle.ViewModelProviders
 
 abstract class BaseFragment : Fragment() {
 
@@ -38,7 +37,7 @@ abstract class BaseFragment : Fragment() {
                 return instance() as T
             }
         }
-        return ViewModelProviders.of(this, factory).get(V::class.java)
+        return ViewModelProvider(this, factory).get(V::class.java)
     }
 
 }
